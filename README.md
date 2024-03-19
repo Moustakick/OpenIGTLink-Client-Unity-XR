@@ -1,4 +1,4 @@
-# PFE_UnityPrototype
+# OpenIGTLink-Client-Unity-XR
 
 ## Installation
 
@@ -18,26 +18,6 @@ With the APK, you can follow the "Install APK via ADB" section of [this](https:/
 
 ## Usage
 
-The application currently supports loading "obj" files into the scene and offers tools for manipulation. Files can be loaded from various sources:
-
-- Web: Files can be fetched via HTTP/HTTPS protocols.
-- Samba Share: Access files stored on a Samba share.
-- [Work in Progress] Slicer3D (VTK Files): Integration with Slicer3D via the OpenIGTLink protocol.
-
-### Selecting the Source
-
-To choose the data source, gesture your hand in your preferred direction to open a menu. Then, with your other hand, select the desired source from the Object Load dropdown menu.
-
-### Loading from the Web
-
-Navigate to the URL menu, enter the desired URL, and press the validate button. Loading occurs asynchronously, so please be patient as the model loads.
-
-### Loading from a Samba Share
-
-In the SMB menu, provide the necessary Samba server information, including the share name and file path for loading. If authentication is required, input the username and password accordingly.
-
-### [Work in Progress] OpenIGTLink
-
 The OpenIGTLink connection operates as a client. Enter the server's IP address and port, if different from the default, in the menu to establish the connection.
 
 ### Object Manipulation
@@ -48,12 +28,13 @@ To access the menu, tilt your hand towards yourself to trigger its opening.
 
 #### Controller Controls
 
-- **Inner Triggers**: Use these triggers to grasp and move objects within reach.
-- **Back Triggers**: Use these triggers to select items on the user interface or manipulate objects with rays.
+- **Inner Triggers** : Use these triggers to grasp and move objects within reach.
+- **Back Triggers** : Use these triggers to select items on the user interface or manipulate objects with rays.
+- **'X' button** : Press 'X' to remove the grabbed item. 
 
 #### Hand Controls
 
-- **Ray Mode**:
+- **Ray Mode** :
   - Transition into ray mode by clawing your thumb and index.
   - Pinch gestures with the rays enable object grabbing or UI selection.
 - **Direct Object Interaction**:
