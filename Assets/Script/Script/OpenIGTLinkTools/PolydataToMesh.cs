@@ -30,6 +30,7 @@ public class PolydataToMesh
         mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
         mesh.vertices = polydata.Points;
         mesh.triangles = polygonsToTriangles(polydata);
+        mesh.RecalculateNormals();
 
         createGameObject("PolydataMesh", mesh);
     }
